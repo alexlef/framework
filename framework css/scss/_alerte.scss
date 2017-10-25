@@ -1,0 +1,70 @@
+$suc_backcolor:green !default;
+$suc_h:20% !default;
+$suc_w:80% !default;
+$info_backcolor:yellow !default;
+$info_h:20% !default;
+$info_w:80% !default;
+$aver_backcolor:orange !default;
+$aver_h:20% !default;
+$aver_w:80% !default;
+$dg_backcolor:red !default;
+$dg_h:20% !default;
+$dg_w:80% !default;
+
+
+
+.succes{
+	width:$suc_w;
+	height:$suc_h;
+	background-color:$suc_backcolor;
+	color:white;
+	padding:1% 1%;
+	text-align:center;
+	margin:auto;
+}
+
+.succes p{
+	width:100%;
+}
+
+.info{
+	width:$info_w;
+	height:$info_h;
+	background-color:$info_backcolor;
+	color:white;
+	padding:1% 1%;
+	text-align:center;
+	margin:auto;
+}
+
+.info p{
+	width:100%;
+}
+
+.avert{
+	width:$aver_w;
+	height:$aver_h;
+	background-color:$aver_backcolor;
+	color:white;
+	padding:1% 1%;
+	text-align:center;
+	margin:auto;
+}
+
+.avert p{
+	width:100%;
+}
+
+.danger{
+	width:$dg_w;
+	height:$dg_h;
+	background-color:$dg_backcolor;
+	color:white;
+	padding:1% 1%;
+	text-align:center;
+	margin:auto;
+}
+
+.danger p{
+	width:100%;
+}

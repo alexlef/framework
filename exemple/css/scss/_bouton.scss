@@ -1,0 +1,139 @@
+$blue: blue !default;
+$b_red: red !default;
+$hover_b_red: blue !default;
+$b_blue: blue !default;
+$hover_b_blue: green !default;
+$act_b_blue:red !default;
+$act_b_red: black !default;
+$yell: yellow !default;
+$hover_b_yell: blue !default;
+$act_b_yell: red !default;
+$green: green !default;
+$hover_b_green: blue !default;
+$act_b_green: red !default;
+$small: 10% !default;
+$large: 20% !default;
+$xl:100% !default;
+$flat:blue !default;
+$flat_act: blue !default;
+$flat_hover: blue !default;
+$fancy_color: aqua !default;
+
+@mixin struct ($width:inherit,$br:none,$display:inline-block,$margbot:2%,$margtop:2%){
+	width:$width;
+	border-radius:$br;
+	display: $display;
+	margin-bottom:$margbot;
+	margin-top:$margtop;
+}
+
+@mixin txt ($fs:150%,$txtd:none,$txtalign:center,$color:white) {
+	font-size: $fs;
+	text-decoration: $txtd;
+	text-align: $txtalign;
+	color: $color;
+}
+
+@mixin style ($border:none,$padd:2% 2%,$cursor:pointer,$bshad:none) {
+	background-color:$blue;
+	border:$border;
+	padding:$padd;
+	cursor:$cursor;
+	box-shadow:$bshad;
+}
+
+@mixin buttonpers (){
+	@include struct();
+	@include txt();
+	@include style();
+}
+
+.btn{
+	@include buttonpers();
+}
+
+.btn:hover{
+		background-color:$hover_b_blue;
+	}
+
+.btn:active{
+			background-color:$act_b_blue;
+	}
+
+.btnsmall{
+	width:$small;
+	@include style (none,1% 1%);
+	@include txt (100%);
+}
+
+.btnlarge{
+	width:$large;
+	@include style ();
+	@include txt (200%);
+}
+
+.red{
+	background-color:$b_red;
+}
+
+.red:hover{
+		background-color:$hover_b_red;
+	}
+
+	.red:active{
+			background-color:$act_b_red;
+		}
+
+.yellow{
+	background-color:$yell;
+}
+
+.yellow:hover{
+		background-color:$hover_b_yell;
+	}
+
+	.yellow:active{
+			background-color:$act_b_yell;
+		}
+
+.green{
+	background-color:$green;
+}
+
+.green:hover{
+	background-color:$hover_b_green;
+}
+
+.green:active{
+	background-color:$act_b_green;
+}
+
+.flat{
+	@include style();
+	background-color:$flat;
+	@include struct();
+}
+
+.flat:hover{
+	background-color:$flat_hover;
+}
+
+.flat:active{
+	background-color:$flat_act;
+}
+
+.extralarge{
+	width:$xl;
+}
+
+.fancy{
+	@include style(none,2% 2%,none,0 9px #999);
+	@include struct(inherit,15px);
+
+}
+
+.fancy:active{
+	@include style(none,2% 2%,none,0 5px #666);
+	transform: translateY(4px);
+	background-color:$fancy_color;
+}
