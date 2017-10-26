@@ -45,3 +45,12 @@ Listes de toutes les mixin ou paramètres présent :
 		La NAVBAR
 		Les ALERTES
 	
+Il y a deux exemples fournies qui utilisent le framework :	
+
+	Exemple.html utilise le css :
+		exempleNonSass
+	C'est a dire qu'il utilise ce css qui prend le dessus face a celui du framework afin de modifié certaines valeurs du framework.
+
+	Accueil.html utilise sass : 
+	C'est a dire qu'il import le fichier "all" et défini lui même ses classes par la suite.
+

@@ -1,6 +1,6 @@
-$nav_color: orange !default;
+$nav_color: grey !default;
 $nav_w:100% !default;
-$nav_border: 2px solid red !default;
+$nav_border: 2px solid black !default;
 $nav_lien:white !default;
 $nav_lien_hover:red !default;
 $dis_li_color:black !default;
@@ -16,31 +16,35 @@ $breadcrumb_lienhover_color:red !default;
 $pag_lien_color:grey !default;
 $pag_hover_color:red !default;
 
+.navbar{
+	display:flex;
+	flex:auto;
+	text-decoration:none;
+	justify-content: center;
+	font-size:22px;
+	width:$nav_w;
+	padding-left:0px;
+	background-color:$nav_color;
 
 	li{
 		display:flex;
 		flex:auto;
 		text-decoration:none;
-		justify-content: center;
 		align-items: center;
-		font-size:22px;
-		text-decoration:none;
-		line-height:50px;
 		border:$nav_border;
 
 			a{
-				display:flex;
-				flex:auto;
 				text-decoration:none;
 				justify-content: center;
 				align-items: center;
-				font-size:22px;
 				color:$nav_lien;
 			}
 			a:hover{
 				color:$nav_lien_hover;
 			}
+
 	}
+}
 
 
 
@@ -85,6 +89,13 @@ ul.breadcrumb{
 	}
 }
 
+.pagination{
+	display:flex;
+	background-color:$pag_color;
+	width:$pag_w;
+	padding-left:1%;
+	flex:auto;
+
 	li{
 		list-style:none;
 		margin-right:2%;
@@ -98,3 +109,4 @@ ul.breadcrumb{
 		}
 
 	}
+}

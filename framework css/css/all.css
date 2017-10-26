@@ -535,30 +535,20 @@ img {
   flex: auto;
   text-decoration: none;
   justify-content: center;
-  align-items: center;
   font-size: 22px;
-  height: 50px;
-  text-align: center;
   width: 100%;
   padding-left: 0px;
-  background-color: orange; }
+  background-color: grey; }
   .navbar li {
     display: flex;
     flex: auto;
     text-decoration: none;
-    justify-content: center;
     align-items: center;
-    font-size: 22px;
-    text-decoration: none;
-    line-height: 50px;
-    border: 2px solid red; }
+    border: 2px solid black; }
     .navbar li a {
-      display: flex;
-      flex: auto;
       text-decoration: none;
       justify-content: center;
       align-items: center;
-      font-size: 22px;
       color: white; }
     .navbar li a:hover {
       color: red; }
